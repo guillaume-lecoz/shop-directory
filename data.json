@@ -1,0 +1,46 @@
+{
+	"zones" : ["Quartier 1","Quartier 2","Quartier 3","Quartier 4"],
+
+	"shops" : [
+		{
+			"name" : "L'Effet Boeuf",
+			"type" : "burger gastro",
+			"phone" : "0606060606",
+			"web" : "www.test.com",
+			"uber" : true,
+			"address" : "15 Route de Valbonne, 06410 Biot",
+			"zones" : ["Tout Biot"],
+			"items" : [
+				{
+					"name" : "Burger 1",
+					"description" : "Cornichon etc...",
+					"price" : "10"
+				},
+				{
+					"name" : "Burger 2",
+					"description" : "",
+					"price" : "10"
+				},
+				{
+					"name" : "Burger 2",
+					"description" : "",
+					"price" : "10"
+				}
+			]
+		},
+		{
+			"name" : "L'addresse",
+			"type" : "cuisine méditerranéenne",
+			"phone" : "06 06 06 06 06",
+			"address" : "15 Route de Valbonne, 06410 Biot",
+			"zones" : ["Tout Biot"]
+		},
+		{
+			"name" : "Ma boulangerie",
+			"type" : "boulangerie",
+			"phone" : "06 06 06 06 06",
+			"address" : "15 Route de Valbonne, 06410 Biot",
+			"zones" : ["Tout Biot"]
+		}
+	]
+}

@@ -1,0 +1,162 @@
+
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+	
+	<style type="text/css">
+	
+		/* ****************************** VERTICAL  ***************/
+		/* 7EA3CD BLUE */
+		/* F9A31A ORANGE */
+		
+	
+		body, input, select, button
+		{
+			font-size:16px;
+		}
+
+		#directory_search
+		{
+			display:block;
+			margin: auto;
+			width: 100%;
+			max-width: 500px;
+			font-size: 18px;
+			color: #000000;
+			padding: 5px 15px 5px 15px;
+			outline: 0;
+			background-color: #EEEEEE;
+			border-radius: 3px;
+			border: none;
+		}
+
+		#directory_display
+		{
+			margin: auto;
+			width: 100%;
+			max-width: 500px;
+		}
+	
+		.directory_shop
+		{
+			background-color: #EEE;
+			margin:auto;
+			padding: 10px;
+			margin-top:20px;
+		}
+
+		.directory_shop_name
+		{
+			font-size:25px;
+			margin-bottom: 10px;
+		}
+
+		.directory_shop_type
+		{
+			background-image:url('icons/icons-boutique-30.png');
+			background-repeat: no-repeat;
+			background-size: 15px 15px;
+			padding-left:20px;
+			margin-bottom: 10px;
+		}
+		.directory_shop_delivery
+		{
+			background-image:url('icons/icons-gps-30.png');
+			background-repeat: no-repeat;
+			background-size: 15px 15px;
+			padding-left:20px;
+			margin-bottom: 10px;
+		}
+
+		.directory_shop_internet
+		{
+			display:block;
+			background-image:url('icons/icons-internet-30.png');
+			background-repeat: no-repeat;
+			background-size: 15px 15px;
+			padding-left:20px;
+			margin-bottom: 10px;
+		}
+
+		.directory_shop_uber
+		{
+			display:block;
+			background-image:url('icons/icons-uber.png');
+			background-repeat: no-repeat;
+			background-size: 15px 15px;
+			padding-left:20px;
+			margin-bottom: 10px;
+		}
+
+		
+
+		.directory_shop_phone
+		{
+			background-image:url('icons/icons-phone-30.png');
+			background-repeat: no-repeat;
+			background-size: 15px 15px;
+			padding-left:20px;
+			margin-bottom: 10px;
+		}
+		.directory_shop_address
+		{
+			background-image:url('icons/icons-marqueur-30.png');
+			background-repeat: no-repeat;
+			background-size: 15px 15px;
+			padding-left:20px;
+			margin-bottom: 10px;
+		}
+
+
+		.directory_shop hr
+		{
+			border: 0;
+    		height: 1px;
+    		background: #888;
+    		background-image: linear-gradient(to right, #DDD, #888, #DDD);
+		}
+
+		.directory_shop_item_button
+		{
+			text-align:center;
+			margin-top: 10px;
+			cursor: pointer;
+			color:#ef9723;
+		}
+		.directory_shop_item_button:hover
+		{
+			color: #dd8d16;
+		}
+
+		.directory_shop_item_price
+		{
+			float:right;
+			font-size:20px;
+		}
+
+		.directory_shop_item_name
+		{
+			font-size:20px;
+		}
+
+		.directory_shop_item_description
+		{
+			font-size:12px;
+		}
+
+	
+	</style>
+	
+	</head>
+	<body>
+	
+		<input id="directory_search" type="text" placeholder="Rechercher...">
+		<div id="directory_display"></div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="annuaire.js"></script>	
+	
+		<div>L'interface est dévelloppé en open-source, </div>
+	</body>
+	</html>
