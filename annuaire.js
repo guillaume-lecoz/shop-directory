@@ -43,10 +43,10 @@ function displayShops(search)
 			display = display + "<div class='directory_shop'>";
 				display = display + "<div class='directory_shop_name'>" + xss(element.name) + "</div>";
 				display = display + "<div class='directory_shop_type'>" + xss(element.type) + "</div>";
-				display = display + "<div class='directory_shop_phone'>" + xss(element.phone) + "</div>";
+				display = display + "<a class='directory_shop_phone' href='tel://"+ xss(element.phone) +"' target='_blanck'>" + xss(element.phone) + "</a>";
 
 				if (element.web && element.web.length > 0)
-					display = display + "<a class='directory_shop_internet'>" + xss(element.web) + "</a>";
+					display = display + "<a class='directory_shop_internet' href='http://"+ xss(element.web) +"' target='_blanck'>" + xss(element.web) + "</a>";
 				
 				display = display + "<div class='directory_shop_delivery'>";
 				if (element.zones && element.zones.length > 0)
