@@ -5,13 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="annuaire.js"></script>	
+
 	<style type="text/css">
 	
 		/* ****************************** VERTICAL  ***************/
 		/* 7EA3CD BLUE */
 		/* F9A31A ORANGE */
 		
+		body
+		{
+			padding:0px;
+			margin:0px;
+		}
 	
 		body, input, select, button
 		{
@@ -27,12 +34,52 @@
 		{
 			color: #dd8d16;
 		}
+		hr
+		{
+			border: 0;
+    		height: 1px;
+    		background: #888;
+    		background-image: linear-gradient(to right, #DDD, #888, #DDD);
+		}
+
+		.header
+		{
+			background-image:url('icons/background-2.jpg');
+			background-size: cover;
+			padding: 10px;
+			font-family: Oswald;
+			font-size:30px;
+			margin-bottom: 10px;
+			text-align:center;
+			color: #FFFFFF;		
+		}
+
+		.info
+		{
+			margin: auto;
+			margin-top: 20px;
+			width: 90%;
+			max-width: 500px;
+			font-size: 14px;
+			text-align: left;
+		}
+
+		.footer
+		{
+			margin: auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 90%;
+			max-width: 500px;
+			font-size: 12px;
+			text-align: center;
+		}
 
 		#directory_search
 		{
 			display:block;
 			margin: auto;
-			width: 100%;
+			width: 90%;
 			max-width: 500px;
 			font-size: 18px;
 			color: #000000;
@@ -40,24 +87,15 @@
 			outline: 0;
 			background-color: #EEEEEE;
 			border-radius: 3px;
+			margin-top: 20px;
 			border: none;
 		}
 
 		#directory_display
 		{
 			margin: auto;
-			width: 100%;
+			width: 90%;
 			max-width: 500px;
-		}
-
-		.footer
-		{
-			margin: auto;
-			margin-top: 20px;
-			width: 100%;
-			max-width: 500px;
-			font-size: 12px;
-			text-align: center;
 		}
 	
 		.directory_shop
@@ -138,14 +176,6 @@
 			margin-bottom: 10px;
 		}
 
-		.directory_shop hr
-		{
-			border: 0;
-    		height: 1px;
-    		background: #888;
-    		background-image: linear-gradient(to right, #DDD, #888, #DDD);
-		}
-
 		.directory_shop_item_button
 		{
 			text-align:center;
@@ -180,11 +210,16 @@
 	</head>
 	<body>
 	
+		<div class="header">ANNUAIRE DES COMMERÇANTS LIVREURS À BIOT</div>
+
+		<div class="info">
+		Pour faciliter la vie des Biotois et pour accompagner nos commerçants, retrouvez ici un annuaire régulièrement mis à jour qui recense les commerçants de proximité de denrées alimentaires qui proposent une livraison à domicile dans votre quartier.
+		</div>
+
+
 		<input id="directory_search" type="text" placeholder="Rechercher...">
 		<div id="directory_display"></div>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="annuaire.js"></script>	
 	
-		<div class="footer">L'interface est développé en open source, <a href="https://github.com/guillaume-lecoz/shop-directory" target="_blank">voir le projet</a></div>
+		<div class="footer"><hr />Ce projet est une initiative de l'équipe de Jean-Pierre Dermit. L'interface ainsi que les données sont librement disponibles en Open Source sous Licence Apache.<br /><a href="https://github.com/guillaume-lecoz/shop-directory" target="_blank">voir le projet sur github.com</a></div>
 	</body>
 	</html>

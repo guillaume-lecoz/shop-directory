@@ -84,8 +84,8 @@ function displayShops(search)
 
 	if (display.length == 0)
 	{
-		display = display + "<div class='directory_item'>";
-		display = display + "Aucun commerce n'a été trouvé avec vos critères de recherche";
+		display = display + "<div class='directory_shop'>";
+		display = display + "<br />Aucun commerce n'a été trouvé avec vos critères de recherche<br /><br />";
 		display = display + "</div>";
 	}
 
