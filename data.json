@@ -3,7 +3,7 @@
 
 	"shops" : [
 		{
-			"name" : "L'Effet Boeuf",
+			"name" : "Burger Test",
 			"type" : "burger gastro",
 			"phone" : "0606060606",
 			"web" : "www.test.com",
@@ -29,15 +29,15 @@
 			]
 		},
 		{
-			"name" : "Mon Resto",
-			"type" : "cuisine méditerranéenne",
+			"name" : "Mon Resto Test",
+			"type" : "Restaurant",
 			"phone" : "06 06 06 06 06",
 			"address" : "15 Route de Valbonne, 06410 Biot",
 			"zones" : ["Tout Biot"]
 		},
 		{
 			"name" : "Ma boulangerie",
-			"type" : "boulangerie",
+			"type" : "Boulangerie",
 			"phone" : "06 06 06 06 06",
 			"address" : "15 Route de Valbonne, 06410 Biot",
 			"zones" : ["Tout Biot"]
